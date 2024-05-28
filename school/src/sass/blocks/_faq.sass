@@ -1,0 +1,55 @@
+.faq
+    &_descr
+        font-family: 'To Japan'
+        font-style: normal
+        font-weight: 400
+        font-size: 96px
+        line-height: 173px
+        background: linear-gradient(135deg,#AF1AF4 48.96%, #F900FE 98.44%, )
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+    &_menu
+        &_item
+            position: relative
+            font-family: 'Nunito'
+            font-style: normal
+            font-weight: 700
+            font-size: 32px
+            line-height: 44px
+            color: #8700A9
+            margin-top: 24px
+            margin-bottom: 24px
+            &::after
+                content: ''
+                right: 16px
+                bottom: 50%
+                transform: translateY(50%)
+                position: absolute
+                cursor: pointer
+                width: 40px 
+                height: 4px 
+                background-color: #8700A9
+                transition: 0.7s all
+                border-radius: 10px
+            &::before
+                content: ''
+                right: 34px
+                bottom: 50%
+                transform: translateY(50%)
+                position: absolute
+                cursor: pointer
+                height: 40px
+                width: 4px
+                background-color: #8700A9
+                border-radius: 10px
+                transition: 0.7s all
+            &:hover
+                &::before 
+                    transform: translateY(20px) rotate(-405deg)
+                &::after
+                    transform: translateY(2px) rotate(-405deg)
+    .palochka
+        width: 1296px
+        height: 4px
+        background-color: #8700A9

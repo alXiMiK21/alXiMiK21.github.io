@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <section class="header1">
+        <ul class="menu">
+            <img src="img/icon.png" alt="" class="icon">
+            <li class="menu_item"><a href="" class="menu_link">о школе</a></li>
+            <li class="menu_item"><a href="#require" class="menu_link">направления</a></li>
+            <li class="menu_item"><a href="#require" class="menu_link">преподаватели</a></li>
+            <li class="menu_item"><a href="#require" class="menu_link">FAQ</a></li>
+            <li class="menu_item"><a href="#" class="menu_link">Отзывы</a></li>
+            <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
+            <button class="btn_header">
+                <img src="img/Vector2.png" alt="">
+            </button>
+        </ul>
+        <div class="registr_descr">Регистрация</div>
+    </section>
+    <section class="alpha">
+        
+
+        <!-- <section class="direction">
+            <div class="direction_descr">Выберите направление:</div>
+            <div class="container">
+                <div class="direction_box">
+                    
+                    <ul>
+                        <li>Искусственный интелект</li>
+                        <li>WEB-разработка</li>
+                        <li>Мобильная разработка</li>
+                        <li>Противодействие дронам</li>
+                        <li>Проектирование нейрофейсов</li>
+                        <li>Квантовые сети</li>
+                        <li>Интернет вещей (умный дом)</li>
+                        <li>3D печать и прототипирование</li>
+                        <li>Робототехника</li>
+                        <li>WEB- и графический дизайн</li>
+                        <li>Разработка ИГР</li>
+                    </ul>
+    
+                </div>
+                    
+            </div>
+        </section> -->
+    <section class="alpha">
+        <section class="pupil">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="pupil_descr">Ученик:</div>
+                    <form class="min-box" action="#">
+                        <label for="direction_descr">Выберите направление:</label>
+                        <select id="fruits" name="fruits">
+                            <option value="" selected disabled hidden></option>
+                            <option value="apple">Искусственный интелект</option>
+                            <option value="banana">WEB-разработка</option>
+                            <option value="orange">Мобильная разработка</option>
+                            <option value="apple">Противодействие дронам</option>
+                            <option value="banana">Проектирование нейрофейсов</option>
+                            <option value="orange">Интернет вещей (умный дом)</option>
+                            <option value="apple">3D печать и прототипирование</option>
+                            <option value="banana">Робототехника</option>
+                            <option value="orange">WEB- и графический дизайн</option>
+                            <option value="orange">Разработка ИГР</option>
+                        </select>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                var selectElement = document.getElementById('fruits');
+                                selectElement.selectedIndex = 0; // Устанавливаем первый пункт как выбранный по умолчанию
+                            });
+                        </script>
+                        <input name="FIO" required placeholder="ФИО" type="text" required> 
+                        <input name="Numb" required placeholder="Контактный номер" type="text" required> 
+                        <input name="Ycheba" required placeholder="Место обучения, класс/курс" type="text"required> 
+                        <input name="email" required placeholder="Адрес электронной почты" type="text"required>
+                        <div class="parents_descr">Родитель:</div> 
+                        <input name="FIO" required placeholder="ФИО" type="text"required> 
+                        <input name="Numb" required placeholder="Контактный номер" type="text"required>
+                        <button class="submit">Зарегестрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="image"></section>
+
+</body>
+</html>
