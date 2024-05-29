@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="libs/gsap.min.js" defer></script>
+    <script src="libs/ScrollSmoother.min.js" defer></script>
+    <script src="libs/ScrollTrigger.min.js" defer></script>
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     <section class="header">
@@ -21,143 +25,160 @@
                 <li class="menu_item"><a href="#" class="menu_link">FAQ</a></li>
                 <li class="menu_item"><a href="#" class="menu_link">Отзывы</a></li>
                 <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
-                <button onclick="window.location.href='../../registr/src/';" class="btn_header" >
+                <button class="btn_header">
                     <img src="icons/icon_header.png" alt="">
                 </button>
             </ul>
         </div>
     </section>
-    <section class="img_section"></section>
+    <section class="img_section">
+        </div>
+    </section>
     <section class="directions">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="direction">
-                        <div class="label">Искусственный интелект</div>
-                        <div class="center">
-                            <img src="img/type_one/center1.png" alt="">
-                        </div>
-                        <a href="#" class="more">ПОДРОБНЕЕ</a>
-                        <div class="direction_img_type_one">
-                            <div class="top_right">
-                                <img src="img/type_one/pngwing12.png" alt="">
-                            </div>
-                            
-                            <div class="center_right">
-                                <img src="img/type_one/pngwing26.png" alt="">
-                            </div>
-                            <div class="bottom_left">
-                                <img src="img/type_one/pngwing7.png" alt="">
-                            </div>
-                            <div class="center_left">
-                                <img src="img/type_one/pngwing5.png" alt="">
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="direction">
-                        <div class="label">WEB-разработка</div>
-                        <div class="center">
-                            <img src="img/type_one/center2.png" alt="">
-                        </div>
-                        <a href="#" class="more">ПОДРОБНЕЕ</a>
-                        <div class="direction_img_type_one">
-                            <div class="top_right">
-                                <img src="img/type_one/pngwing8.png" alt="">
-                            </div>
-                            <div class="center_right">
-                                <img src="img/type_one/pngwing9.png" alt="">
-                            </div>
-                            <div class="bottom_left">
-                                <img src="img/type_one/pngwing4.png" alt="">
+            <div class="first">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="first-1">
+                            <div class="direction">
+                                <div class="label">Искусственный интелект</div>
+                                <div class="center">
+                                    <img src="img/type_one/center1.png" alt="">
+                                </div>
+                                <a href="#" class="more">ПОДРОБНЕЕ</a>
+                                <div class="direction_img_type_one">
+                                    <div class="top_right">
+                                        <img src="img/type_one/pngwing12.png" alt="">
+                                    </div>
+                                    
+                                    <div class="center_right">
+                                        <img src="img/type_one/pngwing26.png" alt="">
+                                    </div>
+                                    <div class="bottom_left">
+                                        <img src="img/type_one/pngwing7.png" alt="">
+                                    </div>
+                                    <div class="center_left">
+                                        <img src="img/type_one/pngwing5.png" alt="">
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="direction">
-                        <div class="label">Мобильная разработка</div>
-                        <div class="center">
-                            <img src="img/type_one/center3.png" alt="">
                         </div>
-                        <a href="#" class="more">ПОДРОБНЕЕ</a>
-                        <div class="direction_img_type_one">
-                            <div class="top_right">
-                                <img src="img/type_one/pngwing12.png" alt="">
-                            </div>
-                            <div class="center_right">
-                                <img src="img/type_one/pngwing25.png" alt="">
-                            </div>
-                            <div class="bottom_left">
-                                <img src="img/type_one/pngwing24.png" alt="">
+                    <div class="col-md-4">
+                        <div class="first-2">
+                            <div class="direction">
+                                <div class="label">WEB-разработка</div>
+                                <div class="center">
+                                    <img src="img/type_one/center2.png" alt="">
+                                </div>
+                                <a href="#" class="more">ПОДРОБНЕЕ</a>
+                                <div class="direction_img_type_one">
+                                    <div class="top_right">
+                                        <img src="img/type_one/pngwing8.png" alt="">
+                                    </div>
+                                    <div class="center_right">
+                                        <img src="img/type_one/pngwing9.png" alt="">
+                                    </div>
+                                    <div class="bottom_left">
+                                        <img src="img/type_one/pngwing4.png" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="direction">
-                        <div class="label">Противодействие дронам</div>
-                        <div class="center">
-                            <img src="img/type_one/center4.png" alt="">
                         </div>
-                        <a href="#" class="more">ПОДРОБНЕЕ</a>
-                        <div class="direction_img_type_one">
-                            <div class="top_right">
-                                <img src="img/type_one/pngwing12.png" alt="">
-                            </div>
-                            <div class="center_right">
-                                <img src="img/type_one/pngwing26.png" alt="">
-                            </div>
-                            <div class="center_left">
-                                <img src="img/type_one/pngwing5.png" alt="">
+                    <div class="col-md-4">
+                        <div class="first-3">
+                            <div class="direction">
+                                <div class="label">Мобильная разработка</div>
+                                <div class="center">
+                                    <img src="img/type_one/center3.png" alt="">
+                                </div>
+                                <a href="#" class="more">ПОДРОБНЕЕ</a>
+                                <div class="direction_img_type_one">
+                                    <div class="top_right">
+                                        <img src="img/type_one/pngwing12.png" alt="">
+                                    </div>
+                                    <div class="center_right">
+                                        <img src="img/type_one/pngwing25.png" alt="">
+                                    </div>
+                                    <div class="bottom_left">
+                                        <img src="img/type_one/pngwing24.png" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="direction">
-                        <div class="label">Проектирование <br>
-                            нейроинтерфейсов</div>
-                        <div class="center">
-                            <img src="img/type_one/center5.png" alt="">
+            </div>
+            <div class="second">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="direction">
+                            <div class="label">Противодействие дронам</div>
+                            <div class="center">
+                                <img src="img/type_one/center4.png" alt="">
+                            </div>
+                            <a href="#" class="more">ПОДРОБНЕЕ</a>
+                            <div class="direction_img_type_one">
+                                <div class="top_right">
+                                    <img src="img/type_one/pngwing12.png" alt="">
+                                </div>
+                                <div class="center_right">
+                                    <img src="img/type_one/pngwing26.png" alt="">
+                                </div>
+                                <div class="center_left">
+                                    <img src="img/type_one/pngwing5.png" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <a href="#" class="more">ПОДРОБНЕЕ</a>
-                        <div class="direction_img_type_one">
-                            <div class="top_right">
-                                <img src="img/type_one/pngwing8.png" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="direction">
+                            <div class="label">Проектирование <br>
+                                нейроинтерфейсов</div>
+                            <div class="center">
+                                <img src="img/type_one/center5.png" alt="">
                             </div>
-                            <div class="center_right">
-                                <img src="img/type_one/pngwing9.png" alt="">
+                            <a href="#" class="more">ПОДРОБНЕЕ</a>
+                            <div class="direction_img_type_one">
+                                <div class="top_right">
+                                    <img src="img/type_one/pngwing8.png" alt="">
+                                </div>
+                                <div class="center_right">
+                                    <img src="img/type_one/pngwing9.png" alt="">
+                                </div>
+                                <div class="bottom_left">
+                                    <img src="img/type_one/pngwing4.png" alt="">
+                                </div>
                             </div>
-                            <div class="bottom_left">
-                                <img src="img/type_one/pngwing4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="direction">
+                            <div class="label">Квантовые сети</div>
+                            <div class="center">
+                                <img src="img/type_one/center6.png" alt="">
+                            </div>
+                            <a href="#" class="more">ПОДРОБНЕЕ</a>
+                            <div class="direction_img_type_one">
+                                <div class="top_right">
+                                    <img src="img/type_one/pngwing12.png" alt="">
+                                </div>
+                                <div class="center_right">
+                                    <img src="img/type_one/pngwing25.png" alt="">
+                                </div>
+                                <div class="bottom_left">
+                                    <img src="img/type_one/pngwing24.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="direction">
-                        <div class="label">Квантовые сети</div>
-                        <div class="center">
-                            <img src="img/type_one/center6.png" alt="">
-                        </div>
-                        <a href="#" class="more">ПОДРОБНЕЕ</a>
-                        <div class="direction_img_type_one">
-                            <div class="top_right">
-                                <img src="img/type_one/pngwing12.png" alt="">
-                            </div>
-                            <div class="center_right">
-                                <img src="img/type_one/pngwing25.png" alt="">
-                            </div>
-                            <div class="bottom_left">
-                                <img src="img/type_one/pngwing24.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
+            </div>
+            <div class="third">
+                <div class="row">
+                    <div class="col-md-4">
                     <div class="direction">
                         <div class="label">Интернет вещей <br>
                             (умный дом)</div>
@@ -220,8 +241,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="direction">
+            </div>
+                </div>
+                
+            <div class="fourth">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="direction">
                         <div class="label">WEB - и графический дизайн</div>
                         <div class="center">
                             <img src="img/type_one/center10.png" alt="">
@@ -241,21 +267,23 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="direction">
-                        <div class="label">Разработка ИГР</div>
-                        <div class="center">
-                            <img src="img/type_one/center11.png" alt="">
-                        </div>
-                        <a href="#" class="more">ПОДРОБНЕЕ</a>
-                        <div class="direction_img_type_one">
-                            <div class="top_right">
-                                <img src="img/type_one/pngwing8.png" alt="">
+                    <div class="first-12">
+                        <div class="direction">
+                            <div class="label">Разработка ИГР</div>
+                            <div class="center">
+                                <img src="img/type_one/center11.png" alt="">
                             </div>
-                            <div class="center_right">
-                                <img src="img/type_one/pngwing9.png" alt="">
-                            </div>
-                            <div class="bottom_left">
-                                <img src="img/type_one/pngwing4.png" alt="">
+                            <a href="#" class="more">ПОДРОБНЕЕ</a>
+                            <div class="direction_img_type_one">
+                                <div class="top_right">
+                                    <img src="img/type_one/pngwing8.png" alt="">
+                                </div>
+                                <div class="center_right">
+                                    <img src="img/type_one/pngwing9.png" alt="">
+                                </div>
+                                <div class="bottom_left">
+                                    <img src="img/type_one/pngwing4.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -264,9 +292,9 @@
                     <div class="direction_end">
                         <img src="img/directions_end.png" alt="">
                     </div>
+                </div></div>
                 </div>
-                
-            </div>
+               
         </div>
     </section>
     <section class="prepod"><img src="img/prepod.png" alt=""></section>
