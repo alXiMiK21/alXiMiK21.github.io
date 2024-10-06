@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль ученика</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="img/Menuitem.png" alt="Школа проIT">
+            </div>
+            <div class="student-info">
+                <p>Иванов Иван Иванович</p>
+                <p>Направление: не определено</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" onclick="showSection('profile')">Профиль</a></li>
+                    <li><a href="#" onclick="showSection('team')">Моя команда</a></li>
+                    <li><a href="#" onclick="showSection('application')">Заявка</a></li>
+                </ul>
+            </nav>
+            <a class="logout" href="#">
+                <img src="img/Vector.png" alt="Выйти">
+                Выйти
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Profile Section -->
+            <div id="profile" class="section active">
+                <h2>Данные профиля</h2>
+                <div class="profile-content">
+                    <form id="profile-form">
+                        <div class="form-group">
+                            <label for="last-name">Фамилия*</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="first-name">Имя*</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="middle-name">Отчество*</label>
+                            <input type="text" id="middle-name" name="middle-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthdate">Дата рождения*</label>
+                            <input type="text" id="birthdate" name="birthdate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Почта*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Номер телефона*</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="school">Место обучения*</label>
+                            <input type="text" id="school" name="school" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="social-media">Социальные сети (Телеграм, ВК и тд)*</label>
+                            <input type="text" id="social-media" name="social-media" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parent-name">ФИО родителя*</label>
+                            <input type="text" id="parent-name" name="parent-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parent-phone">Номер родителя*</label>
+                            <input type="text" id="parent-phone" name="parent-phone"required>
+                        </div>
+
+                        <button type="submit">Сохранить</button>
+                    
+                        
+                    </form>
+                    <div class="profile-image">
+                        <img src="img/rafiki.png" alt="Profile Image">
+                    </div>
+                
+                </div>
+            </div>
+
+            
+            <!-- Team Section -->
+            <div id="team" class="section active">
+                <h2>Моя команда</h2>
+                <div class="team-grid">
+                    <div class="team-box">
+                        <p><strong>Наставник:</strong> Фабияк Альбина Александровна</p>
+                        <p><strong>Направление:</strong> Робототехника</p>
+                        <p><strong>Тема проекта:</strong> Создание робота пылесоса с динамиками для радио</p>
+                    </div>
+                    <div class="team-box">
+                        <p><strong>Задание</strong></p>
+                        <p>Разработать информационный портал об обучающем учреждении с возможностью записи на представленные курсы</p>
+                    </div>
+                    <div class="team-box">
+                        <p><strong>Участники команды</strong></p>
+                        <ul>
+                            <li>Сидорова Надежда - Капитан</li>
+                            <li>Котик Владислав - Тестировщик</li>
+                            <li>Сушкевич Дарина - Фронт. разработчик</li>
+                            <li>Лукчук Роман - Век. разработчик</li>
+                            <li>Партом Михаил - Дизайнер</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="img/amico.png" alt="Team Image" class="team-image">
+                    </div>
+                </div>
+            </div>
+            
+
+            <div id="application" class="section">
+                    <h2>Заявка <div class="aye">(не подана)</div></h2>
+                    <form id="application-form">
+                        <div class="form-group form-type">
+                            <button type="button" id="project-button" class="form-option">Проект</button>
+                            <button type="button" id="intensive-button" class="form-option active">Интенсив</button>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="direction">Выбор направления</label>
+                            <select id="direction" name="direction" required>
+                                <option value="" disabled selected>Выберите направление</option>
+                                <option value="robotics">Робототехника</option>
+                                <option value="iot">Интернет вещей (умный дом)</option>
+                                <option value="ai">Искусственный интеллект</option>
+                                <option value="web-dev">WEB-разработка</option>
+                                <option value="mobile-dev">Мобильная разработка</option>
+                                <option value="drones">Противодействие дронам</option>
+                                <option value="neural-interfaces">Проектирование нейроинтерфейсов</option>
+                                <option value="quantum-networks">Квантовые сети</option>
+                                <option value="3d-printing">3D-печать и прототипирование</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="skills">Что ты умеешь из сферы IT?</label>
+                            <input type="text" id="skills" name="skills" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="learning-goals">Чему ты хочешь научиться?</label>
+                            <input type="text" id="learning-goals" name="learning-goals" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">Есть у тебя опыт в разработке?</label>
+                            <input type="text" id="experience" name="experience" required>
+                        </div>
+                        <button type="submit" id="submit-button" disabled>Подать заявку</button>
+                    </form>
+                    <p id="submission-status"></p>
+            </div>
+        </div>
+    </div>   
+  
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const submitButton = document.getElementById('submit-button');
+    const form = document.getElementById('application-form');
+
+    form.addEventListener('input', function() {
+        let allFilled = true;
+        form.querySelectorAll('input, select').forEach(input => {
+            if (!input.value) {
+                allFilled = false;
+            }
+        });
+
+        if (allFilled) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    });
+});
+
+        // JavaScript to toggle between the buttons
+    document.addEventListener('DOMContentLoaded', function () {
+    const projectButton = document.getElementById('project-button');
+    const intensiveButton = document.getElementById('intensive-button');
+    
+    projectButton.addEventListener('click', function () {
+        toggleActiveButton(projectButton, intensiveButton);
+    });
+    
+    intensiveButton.addEventListener('click', function () {
+        toggleActiveButton(intensiveButton, projectButton);
+    });
+
+    function toggleActiveButton(activeButton, inactiveButton) {
+        activeButton.classList.add('active');
+        inactiveButton.classList.remove('active');
+    }
+});
+
+        function showSection(sectionId) {
+    // Скрыть все секции
+    document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+    });
+    // Показать выбранную секцию
+    document.getElementById(sectionId).classList.add('active');
+}
+
+// Убедитесь, что по умолчанию только профильная секция активна
+document.addEventListener('DOMContentLoaded', function () {
+    showSection('profile');
+});
+
+    </script>
+</body>
+</html>

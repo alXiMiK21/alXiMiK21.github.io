@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #D9A9FF;
+    color: rgb(15, 14, 14);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 124px;
+    max-height: 64px;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.student-info p {
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li a {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid rgb(60, 18, 209);
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.menu ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.logout {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(60, 18, 209);
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+
+    margin-top: 40vh;
+    align-self: center; 
+}
+
+.logout img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.logout:hover {
+    background-color: #f0f0f0;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #CC00FF;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.soxr {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #6a4ddb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+}
+
+.soxr:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.soxr:hover:enabled {
+    background-color: #3A10E5;
+}
+
+.form-option {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6a4ddb;
+    background-color: white;
+    color: #6a4ddb;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-option.active {
+    background-color: #6a4ddb;
+    color: white;
+}
+
+.form-group.form-type {
+    display: flex;
+    gap: 10px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+#submission-status {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh; /* Высота контейнера будет 100% от высоты окна браузера */
+    max-width: 800px;
+    margin: 0 auto; /* Центрирование контейнера по горизонтали */
+}
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 850px; /* Ограничиваем ширину контейнера для двух блоков на строке */
+    margin: 0 auto; /* Центрируем контейнер */
+    gap: 30px; /* Расстояние между блоками */
+    margin-top: 80px;
+}
+
+.task-box {
+    border: 2px solid #CC00FF;
+    width: 400px; /* Ширина блока */
+    height: 195px; /* Высота блока */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.team-box{
+    border: 2px solid #CC00FF;
+    width: 400px; /* Ширина блока */
+    height: 195px; /* Высота блока */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.task-box {
+    text-align: center;
+}
+
+.team-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team-box li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.role {
+    /* border-top: 3px solid rgb(185, 23, 118); */
+    height: 2px;
+    width: 64px;
+    background-color: #CC00FF;
+    margin-left: 4px;
+    margin-top: 11px;
+    
+
+    /* flex-grow: 1;
+    margin-left: 5px;
+    text-align: right;
+    white-space: nowrap;
+    padding-right: 20px; */
+}
+
+
+.team-member h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.team-member p, .team-member ul {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Перемещаем контейнер поиска вправо */
+    position: relative;
+    width: 20%; /* Размер контейнера */
+    margin-bottom: 20px;
+    margin-left: auto; /* Добавляем авто отступ слева для выравнивания вправо */
+}
+
+.team-photo img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+    position: absolute;
+    right: 10px; /* Иконка теперь будет справа */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-icon {
+    width: 20px; /* Размер иконки */
+    height: 20px; /* Размер иконки */
+}
+
+
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #DC4FFF;
+    border: 2px solid #CC00FF;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid #DD00FF; */
+}
+
+th {
+    background-color: #D9A9FF;
+}
+
+/* Задаем ширину столбцов */
+table th:nth-child(1), table td:nth-child(1), table th:nth-child(7), table td:nth-child(7) {
+    width: 15%; /* Первый столбец ФИО */
+}
+
+table th:nth-child(2), table td:nth-child(2),
+table th:nth-child(4), table td:nth-child(4),
+table th:nth-child(5), table td:nth-child(5),
+table th:nth-child(6), table td:nth-child(6),
+table th:nth-child(8), table td:nth-child(8) {
+    width: 12%; /* Остальные столбцы */
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Alternate row colors */
+#studentsTable tr:nth-child(odd), #teachersTable tr:nth-child(odd) {
+    background-color: #EC7DFF; /* Light purple for odd rows */
+}
+
+#studentsTable tr:nth-child(even), #teachersTable tr:nth-child(even) {
+    background-color: #DC4FFF; /* Darker purple for even rows */
+}
+
+.zad{
+    text-align: center;
+}
+
+/* Принудительное применение стилей */
+form input[type="text"].small-input {
+    width: 150px !important; /* Устанавливаем маленькую ширину для полей ввода */
+    padding: 5px !important; /* Уменьшаем внутренний отступ */
+    font-size: 14px !important; /* Уменьшаем размер шрифта */
+    border: 1px solid #CC00FF !important;
+    border-radius: 5px !important;
+}
+
+.team-box li{
+    font-size: 16px !important;
+}
+
+form li {
+
+
+    margin-bottom: 5px; /* Увеличенный отступ между элементами списка */
+
+}
+
+
+.role-label {
+    font-size: 16px; /* Увеличенный размер шрифта */
+}

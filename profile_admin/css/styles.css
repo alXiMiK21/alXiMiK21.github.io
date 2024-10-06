@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #D9A9FF;
+    color: #0f0e0e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 124px;
+    max-height: 64px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.student-info p {
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li a {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid rgb(60, 18, 209);
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.menu ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.logout {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(60, 18, 209);
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+
+    margin-top: 40vh;
+    align-self: center; 
+}
+
+.logout img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.logout:hover {
+    background-color: #f0f0f0;
+}
+.main-content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Перемещаем контейнер поиска вправо */
+    position: relative;
+    width: 20%; /* Размер контейнера */
+    margin-bottom: 20px;
+    margin-left: auto; /* Добавляем авто отступ слева для выравнивания вправо */
+}
+
+input[type="text"] {
+    padding: 10px 40px 10px 10px; /* Оставляем место для иконки справа */
+    font-size: 14px;
+    border: 1px solid #CC00FF;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.search-button {
+    position: absolute;
+    right: 10px; /* Иконка теперь будет справа */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-icon {
+    width: 20px; /* Размер иконки */
+    height: 20px; /* Размер иконки */
+}
+
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #DC4FFF;
+    border: 2px solid #CC00FF;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid #DD00FF; */
+}
+
+th {
+    background-color: #D9A9FF;
+}
+
+
+/* table th:nth-child(1), table td:nth-child(1) {
+    width: 16%; 
+}
+
+table th:nth-child(2), table td:nth-child(2),
+table th:nth-child(3), table td:nth-child(3),
+table th:nth-child(4), table td:nth-child(4),
+table th:nth-child(5), table td:nth-child(5),
+table th:nth-child(6), table td:nth-child(6),
+table th:nth-child(7), table td:nth-child(7) {
+    width: 14%; 
+} */
+table th:nth-child(1), table td:nth-child(1), table th:nth-child(7), table td:nth-child(7), table th:nth-child(10), table td:nth-child(10),table th:nth-child(9), table td:nth-child(9) {
+    width: 10%; /* Первый столбец ФИО */
+}
+table th:nth-child(2), table td:nth-child(2),
+table th:nth-child(3), table td:nth-child(3),
+table th:nth-child(4), table td:nth-child(4),
+table th:nth-child(5), table td:nth-child(5),
+table th:nth-child(6), table td:nth-child(6),
+table th:nth-child(8), table td:nth-child(8),
+table th:nth-child(11), table td:nth-child(11) {
+    width: 8%; /* Остальные столбцы */
+}
+
+
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Alternate row colors */
+#studentsTable tr:nth-child(odd), #teachersTable tr:nth-child(odd) {
+    background-color: #EC7DFF; /* Light purple for odd rows */
+}
+
+#studentsTable tr:nth-child(even), #teachersTable tr:nth-child(even) {
+    background-color: #DC4FFF; /* Darker purple for even rows */
+}

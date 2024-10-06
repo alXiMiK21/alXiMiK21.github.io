@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+    <a href="javascript:history.back()" class="back-arrow">&#8592; Назад</a>
+    <div class="container">
+        <div class="image-container">
+            <img src="img/image_placeholder.png" alt="Image">
+            <button type="submit" form="registration-form">Зарегистрироваться</button>
+        </div>
+        <div class="form-container">
+            <h1>Регистрация</h1>
+            <form id="registration-form" action="submit_form.php" method="POST">
+                <fieldset>
+                    <legend>Ученик:</legend>
+                    <label for="student-fio">ФИО:</label>
+                    <input type="text" id="student-fio" name="student_fio" required>
+
+                    <label for="student-phone">Контактный номер:</label>
+                    <input type="tel" id="student-phone" name="student_phone" required>
+
+                    <label for="student-dob">Дата рождения:</label>
+                    <input type="date" id="student-dob" name="student_dob" required>
+
+                    <label for="student-email">Адрес электронной почты:</label>
+                    <input type="email" id="student-email" name="student_email" required>
+
+                    <label for="student-password">Пароль:</label>
+                    <input type="password" id="student-password" name="student_password" required>
+
+                    <label for="student-password-confirm">Повторите пароль:</label>
+                    <input type="password" id="student-password-confirm" name="student_password_confirm" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Родитель<span> (заполнять, если нет 18)</span>:</legend>
+                    <label for="parent-fio">ФИО:</label>
+                    <input type="text" id="parent-fio" name="parent_fio">
+
+                    <label for="parent-phone">Контактный номер:</label>
+                    <input type="tel" id="parent-phone" name="parent_phone">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

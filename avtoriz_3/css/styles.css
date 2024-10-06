@@ -1,0 +1,138 @@
+* {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reset-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reset-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+.reset-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #4e00e4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+}
+
+.submit-button:hover {
+    background-color: #3c00b8;
+}
+
+/* Notification styling */
+.notification {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4e00e4;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    display: none; /* Initially hidden */
+}
+
+.notification.hidden {
+    display: none;
+}
+
+.notification.visible {
+    display: block;
+}
+
+/* Back button styling */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #333333;
+}
+
+.back-arrow:hover {
+    color: #3700b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-container, .form-container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль преподователя</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <!-- Upload your logo here -->
+                <img src="img/Menuitem.png" alt="Школа проIT">
+            </div>
+            <div class="student-info">
+                <p>Иванов Иван Иванович</p>
+                <p>Направление: не определено</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" onclick="showSection('profile')">Профиль</a></li>
+                    <li><a href="#" onclick="showSection('team')">Моя команда</a></li>
+                    <li><a href="#" onclick="showSection('students')">Ученики</a></li>
+                </ul>
+            </nav>
+            <a class="logout" href="#">
+                <img src="img/Vector.png" alt="Выйти">
+                Выйти
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Profile Section -->
+            <div id="profile" class="section active">
+                <h2>Данные профиля</h2>
+                <div class="profile-content">
+                    <form id="profile-form">
+                        <div class="form-group">
+                            <label for="last-name">Фамилия*</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="first-name">Имя*</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="middle-name">Отчество*</label>
+                            <input type="text" id="middle-name" name="middle-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthdate">Дата рождения*</label>
+                            <input type="text" id="birthdate" name="birthdate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Почта*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Номер телефона*</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="school">Место работы*</label>
+                            <input type="text" id="school" name="school" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="social-media">Социальные сети (Телеграм, ВК и тд)*</label>
+                            <input type="text" id="social-media" name="social-media" required>
+                        </div>
+
+                        <button type="submit" class="soxr">Сохранить</button>
+                    
+                        
+                    </form>
+                    <div class="profile-image">
+                        <img src="img/rafiki.png" alt="Profile Image" style="width: 100% !important; max-width: 1000px !important; max-height: 1000px !important; object-fit: cover !important;">
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Team Section -->
+            <div id="team" class="section">
+                <h2>Моя команда</h2>
+                <div class="team-content">
+                    <!-- Задание -->
+                    <div class="task-box">
+                        <strong>Задание</strong><br>
+                        Разработать информационный портал об обучающим учреждении с возможностью записи на представленные курсы<br><br>
+                        <strong>Тема проекта:</strong> Создание робота пылесоса с динамиками для радио
+                    </div>
+                
+                    <!-- Команда -->
+                    <div class="team-box centered-box">
+                        <form id="team-form">
+                            <ul>
+                                <li>
+                                    <label for="captain" class="role-label">Капитан:</label>
+                                    <input type="text" id="captain" name="captain" class="small-input" placeholder="Введите капитана" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="tester" class="role-label">Тестировщик:</label>
+                                    <input type="text" id="tester" name="tester" class="small-input" placeholder="Введите тестировщика" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="frontend" class="role-label">Фронт. разраб:</label>
+                                    <input type="text" id="frontend" name="frontend" class="small-input" placeholder="Введите фронт. разработчика" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="backend" class="role-label">Бек. разраб:</label>
+                                    <input type="text" id="backend" name="backend" class="small-input" placeholder="Введите бек. разработчика" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="designer" class="role-label">Дизайнер:</label>
+                                    <input type="text" id="designer" name="designer" class="small-input" placeholder="Введите дизайнера" oninput="saveTeamData()">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    
+                    <div class="task-box">
+                        <strong>Задание</strong><br>
+                        Разработать информационный портал об обучающим учреждении с возможностью записи на представленные курсы<br><br>
+                        <strong>Тема проекта:</strong> Создание робота пылесоса с динамиками для радио
+                    </div>
+                
+                    <!-- Команда -->
+                    <div class="team-box centered-box">
+                        <form id="team-form">
+                            <ul>
+                                <li>
+                                    <label for="captain" class="role-label">Капитан:</label>
+                                    <input type="text" id="captain" name="captain" class="small-input" placeholder="Введите капитана" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="tester" class="role-label">Тестировщик:</label>
+                                    <input type="text" id="tester" name="tester" class="small-input" placeholder="Введите тестировщика" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="frontend" class="role-label">Фронт. разраб:</label>
+                                    <input type="text" id="frontend" name="frontend" class="small-input" placeholder="Введите фронт. разработчика" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="backend" class="role-label">Бек. разраб:</label>
+                                    <input type="text" id="backend" name="backend" class="small-input" placeholder="Введите бек. разработчика" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="designer" class="role-label">Дизайнер:</label>
+                                    <input type="text" id="designer" name="designer" class="small-input" placeholder="Введите дизайнера" oninput="saveTeamData()">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                    <div class="task-box">
+                        <strong>Задание</strong><br>
+                        Разработать информационный портал об обучающим учреждении с возможностью записи на представленные курсы<br><br>
+                        <strong>Тема проекта:</strong> Создание робота пылесоса с динамиками для радио
+                    </div>
+                
+                    <!-- Команда -->
+                    <div class="team-box centered-box">
+                        <form id="team-form">
+                            <ul>
+                                <li>
+                                    <label for="captain" class="role-label">Капитан:</label>
+                                    <input type="text" id="captain" name="captain" class="small-input" placeholder="Введите капитана" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="tester" class="role-label">Тестировщик:</label>
+                                    <input type="text" id="tester" name="tester" class="small-input" placeholder="Введите тестировщика" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="frontend" class="role-label">Фронт. разраб:</label>
+                                    <input type="text" id="frontend" name="frontend" class="small-input" placeholder="Введите фронт. разработчика" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="backend" class="role-label">Бек. разраб:</label>
+                                    <input type="text" id="backend" name="backend" class="small-input" placeholder="Введите бек. разработчика" oninput="saveTeamData()">
+                                </li>
+                                <li>
+                                    <label for="designer" class="role-label">Дизайнер:</label>
+                                    <input type="text" id="designer" name="designer" class="small-input" placeholder="Введите дизайнера" oninput="saveTeamData()">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                
+                    <!-- Повторяем блоки для других заданий и команд -->
+                </div>
+            </div>
+            
+            <div id="students" class="section active">
+                <h2>Ученики</h2>
+                <div class="search-container">
+                    <input type="text" id="searchStudents" placeholder="Поиск">
+                    <button type="button" class="search-button" onclick="performSearch()">
+                        <img src="img/213.png" alt="Search Icon" class="search-icon">
+                    </button>
+                </div>
+                
+                <div class="table-container">
+                    <table id="studentsTable">
+                        <thead>
+                            <tr>
+                                <th>ФИО</th>
+                                <th>Дата рождения</th>
+                                <th>Место учебы</th>
+                                <th>Почта</th>
+                                <th>Телефон ученика</th>
+                                <th>Социальная сеть</th>
+                                <th>ФИО Родителя</th>
+                                <th>Телефон родителя</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Example Rows -->
+                            <tr>
+                                <td>Иванов Иван Иванович</td>
+                                <td>01.01.2000</td>
+                                <td>школа №1</td>
+                                <td>ivanov@example.com</td>
+                                <td>+7 900 123 45 67</td>
+                                <td>@ivanov_social</td>
+                                <td>Иванов Иван Иванович</td>
+                                <td>+7 900 123 45 67</td>
+                            </tr>
+                            <tr>
+                                <td>Петров Петр Петрович</td>
+                                <td>02.02.2001</td>
+                                <td>школа №2</td>
+                                <td>petrov@example.com</td>
+                                <td>+7 900 234 56 78</td>
+                                <td>@petrov_social</td>
+                                <td>Петров Петр Петрович</td>
+                                <td>+7 900 234 56 78</td>
+                            </tr>
+                            <tr>
+                                <td>Иванов Иван Иванович</td>
+                                <td>01.01.2000</td>
+                                <td>школа №1</td>
+                                <td>ivanov@example.com</td>
+                                <td>+7 900 123 45 67</td>
+                                <td>@ivanov_social</td>
+                                <td>Иванов Иван Иванович</td>
+                                <td>+7 900 123 45 67</td>
+                            </tr>
+                            <tr>
+                                <td>Петров Петр Петрович</td>
+                                <td>02.02.2001</td>
+                                <td>школа №2</td>
+                                <td>petrov@example.com</td>
+                                <td>+7 900 234 56 78</td>
+                                <td>@petrov_social</td>
+                                <td>Петров Петр Петрович</td>
+                                <td>+7 900 234 56 78</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+  
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    loadTeamData(); // Загрузка сохраненных данных при загрузке страницы
+});
+
+function saveTeamData() {
+    const captain = document.getElementById('captain').value;
+    const tester = document.getElementById('tester').value;
+    const frontend = document.getElementById('frontend').value;
+    const backend = document.getElementById('backend').value;
+    const designer = document.getElementById('designer').value;
+
+    // Сохранение данных в localStorage
+    localStorage.setItem('captain', captain);
+    localStorage.setItem('tester', tester);
+    localStorage.setItem('frontend', frontend);
+    localStorage.setItem('backend', backend);
+    localStorage.setItem('designer', designer);
+
+    alert('Данные команды сохранены');
+}
+
+function loadTeamData() {
+    // Загрузка данных из localStorage
+    document.getElementById('captain').value = localStorage.getItem('captain') || '';
+    document.getElementById('tester').value = localStorage.getItem('tester') || '';
+    document.getElementById('frontend').value = localStorage.getItem('frontend') || '';
+    document.getElementById('backend').value = localStorage.getItem('backend') || '';
+    document.getElementById('designer').value = localStorage.getItem('designer') || '';
+}
+
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            showSection('profile'); // По умолчанию показываем профиль
+
+            fetch('/students')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('student-table-body');
+                    tableBody.innerHTML = '';
+                    data.forEach(student => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${student.full_name}</td>
+                            <td>${student.birthdate}</td>
+                            <td>${student.school}</td>
+                            <td>${student.email}</td>
+                            <td>${student.phone}</td>
+                            <td>${student.social_media}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Ошибка при получении данных об учениках:', error));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #D9A9FF;
+    color: rgb(15, 14, 14);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 124px;
+    max-height: 64px;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.student-info p {
+    margin-top: 1px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li a {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid rgb(60, 18, 209);
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.menu ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.logout {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(60, 18, 209);
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+
+    margin-top: 40vh;
+    align-self: center; 
+}
+
+.logout img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.logout:hover {
+    background-color: #f0f0f0;
+}
+.main-content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #CC00FF;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #6a4ddb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+}
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+button:hover:enabled {
+    background-color: #3A10E5;
+}
+
+.form-option {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6a4ddb;
+    background-color: white;
+    color: #6a4ddb;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.form-option.active {
+    background-color: #6a4ddb;
+    color: white;
+}
+.form-group.form-type {
+    display: flex;
+    gap: 10px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+#submission-status {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh; /* Высота контейнера будет 100% от высоты окна браузера */
+    max-width: 800px;
+    margin: 0 auto; /* Центрирование контейнера по горизонтали */
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 900px;
+    max-height: 900px;
+    object-fit: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+/* CSS for the team grid layout */
+/* CSS for the team grid layout */
+/* CSS for the team grid layout */
+/* CSS for the team grid layout */
+.team-grid {
+    display: grid;
+    grid-template-columns: 600px 600px; /* Two fixed columns of 400px */
+    grid-template-rows: auto; /* Adjust rows based on content */
+    justify-content: center; /* Align the grid in the center */
+    align-items: center; /* Center the content vertically */
+    grid-column-gap: 51px; /* Horizontal gap between columns */
+    grid-row-gap: 40px; /* Vertical gap between rows */
+    margin: 0 auto; /* Center the grid on the page */
+    margin-top: 60px;
+}
+
+.team-box {
+    width: 450px;
+    height: 280px;
+    border: 2px solid #CC00FF; /* Pink border */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.team-image {
+    width: 450px;
+    
+    object-fit: cover;
+}
+
+
+.aye{
+    font-size: 14px;
+}
+
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет блокам переноситься на новую строку */
+    gap: 20px; /* Отступы между блоками */
+    justify-content: space-between; /* Равномерное распределение блоков */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    margin-top: 40px;
+}
+
+.team-member {
+    border: 2px solid #CC00FF;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: 136px;
+/* Каждый блок занимает половину ширины контейнера за вычетом отступа */
+
+    background-color: #fff; /* Белый фон, как на примере */
+    margin: 0 70px 0 70px;
+}
+
+/* Для блока с участниками команды и фото делаем ширину 48%, чтобы они располагались в одной строке */
+.team-member.full-width,
+.team-photo {
+    width: calc(48%); /* Ширина фото и блока участников, чтобы они вместе занимали всю ширину */
+}
+
+/* Центрируем изображение внутри блока */
+.team-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.team-photo img {
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина изображения */
+    object-fit: cover;
+}
+
+
+.team-member h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.team-member p, .team-member ul {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.team-photo img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Уменьшаем форму только на вкладке Профиль */
+#profile-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    width: 100%;
+    max-width: 500px; /* Уменьшаем ширину */
+}
+
+#profile-form input[type="text"],
+#profile-form input[type="email"],
+#profile-form input[type="tel"],
+#profile-form input[type="date"],
+#profile-form select {
+    padding: 8px; /* Уменьшаем внутренние отступы */
+    font-size: 14px;
+    border: 1px solid #CC00FF;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#profile-form button {
+    padding: 8px; /* Уменьшаем отступы для кнопки */
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#profile-form label {
+    font-size: 14px; /* Уменьшаем шрифт меток */
+}
+
+#profile-form .form-group {
+    margin-bottom: 7px; /* Уменьшаем расстояние между группами полей */
+}
