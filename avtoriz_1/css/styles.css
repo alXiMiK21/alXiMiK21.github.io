@@ -144,7 +144,8 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
-    
+
+   
     .image-container, .form-container {
         width: 100%;
     }
@@ -152,5 +153,47 @@ h1 {
     h1 {
         font-size: 1.2em;
         text-align: center;
+    }
+}
+
+
+@media (max-height: 830px) {
+    .back-arrow {
+        top: 5px; /* Смещаем кнопку выше */
+    }
+
+    .image-container {
+        margin-top:100px; /* Добавляем отступ для изображения */
+    }
+}
+
+@media (max-height: 667px) {
+    .back-arrow {
+        top: 5px; /* Смещаем кнопку выше */
+    }
+
+    .image-container {
+        margin-top:200px; /* Добавляем отступ для изображения */
+    }
+}
+
+
+@media (max-height: 740px) {
+    .back-arrow {
+        top: 5px; /* Смещаем кнопку выше */
+    }
+
+    .image-container {
+        margin-top:200px; /* Добавляем отступ для изображения */
+    }
+}
+
+@media (max-height: 740px) {
+    .back-arrow {
+        top: 5px; /* Смещаем кнопку выше */
+    }
+
+    .image-container {
+        margin-top:200px; /* Добавляем отступ для изображения */
     }
 }
